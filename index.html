@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3cf5ae42e7.js" crossorigin="anonymous"></script>
+
+    <title>Moro Abdul-Jamiu</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" alt="logo image" class="logo">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text-container">
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Moro Abdul-Jamiu :) </span><br> a creative web designer</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------About me section-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/myPic2.png" alt="my imgae">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a frontend developer specializing in HTML, CSS, JavaScript, and React. With a strong foundation in these technologies, 
+                        I am able to build intuitive and responsive user interfaces for web applications. I am constantly learning and staying up-to-date 
+                        with the latest developments in frontend development, and I am excited to bring my skills and passion to new projects and challenges. 
+                        In my free time, I enjoy participating in hackathons and working on personal projects to further develop my skills and explore new 
+                        technologies. I am always open to new opportunities and collaborations, so please don't hesitate to reach out!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li>
+                                <span>2019 - Current</span><br> BA Economics & Geography at University of Ghana
+                            </li>
+                            <li>
+                                <span>2021 - Current</span><br> Diploma Computer Science at University of the People
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li>
+                                <span>Web Development</span><br> Web app Development
+                            </li>
+                            <li>
+                                <span>UI/UX</span><br> Designing Web/App interfaces
+                            </li>
+                            <li>
+                                <span>Graphic Design</span><br> Design Banners and Posters for businesses
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>2022 - current</span><br> Frontend Engineer at SpaceInfoTech
+                            </li>
+                            <li>
+                                <span>2022 - Current</span><br> S.R.C President at Firdaus Students Hostel
+                            </li>
+                            <li>
+                                <span>2019</span><br> Internship at Moscode Technology
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ---------services section-------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        I offer professional web design services to help businesses and 
+                        organizations create visually appealing and user-friendly websites.
+                    </p>
+                    <a onclick="showMore()" id="learnMore-webdev">View more <i class="fa-solid fa-plus"></i></a>
+                    <p id="more-description-webdev"> <br>
+                        My process begins with understanding the needs and goals of my clients, 
+                        and I work closely with them to create a website that aligns with their 
+                        brand and effectively communicates their message. <br> I have a strong foundation 
+                        in HTML, CSS, and JavaScript, and I use these technologies to build responsive 
+                        and interactive websites that work seamlessly across devices. Whether you need 
+                        a simple brochure site or a complex web application, I am here to help bring your 
+                        vision to life. <br> Please don't hesitate to contact me to discuss your web design needs.
+                    </p>
+                    <a onclick="showLess()" id="learnLess-webdev">View less <i class="fa-solid fa-minus"></i></a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I offer professional UI/UX design services to help businesses and 
+                        organizations create intuitive and engaging user experiences for 
+                        their products and websites.</p>
+                        <a onclick="showMore()" id="More-des-ui">View more <i class="fa-solid fa-plus"></i></a>
+                        <p id="more-description-ui"> <br>
+                            I have a strong understanding of user psychology and design principles, and I use 
+                            this knowledge to create wireframes, prototypes, and high-fidelity mockups that 
+                            effectively solve user needs and achieve business goals. <br> I am proficient in design 
+                            tools such as Adobe XD and Sketch, and I have a strong eye for aesthetics and 
+                            attention to detail. Whether you need to redesign an existing product or create a 
+                            new one from scratch, I am here to help bring your vision to life. <br> Please don't 
+                            hesitate to contact me to discuss your UI/UX design needs.
+                        </p>
+                        <a onclick="showLess()" id="Less-des-ui">View less <i class="fa-solid fa-minus"></i></a>
+                    </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphic Design</h2>
+                    <p>I offer professional graphic design services to help businesses and 
+                        organizations create visually stunning and effective marketing materials.</p>
+                        <a onclick="showMore()" id="More-des-graphic">View more <i class="fa-solid fa-plus"></i></a>
+                        <p id="more-description-graphic"> <br>
+                            My services include branding, print design, and digital design, and I have experience 
+                            creating a wide range of materials such as logos, business cards, brochures, posters, 
+                            social media graphics, and more. <br> I have a strong understanding of design principles and 
+                            a keen eye for aesthetics, and I use industry-standard software such as Adobe Photoshop and 
+                            pixelab to bring my designs to life. Whether you need to refresh your brand or create 
+                            new marketing materials, I am here to help. <br> Please don't hesitate to contact me to discuss 
+                            your graphic design needs.
+                        </p>
+                        <a onclick="showLess()" id="Less-des-graphic">View less <i class="fa-solid fa-minus"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------Projects section-------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you with talented people around the world. Download it from Playstore</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you with talented people around the world. Download it from Playstore</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Device Tracking App</h3>
+                        <p>The app connects you with talented people around the world. Download it from Playstore</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Property Security App</h3>
+                        <p>The app connects you with talented people around the world. Download it from Playstore</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ---------contact section-------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane"></i> moroabduljamiu@gmail.com</p>
+                    <p> <i class="fa-sharp fa-solid fa-square-phone"></i> +233556475251</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/moro-abdul-jamiu/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/AbokyiMAJ"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/maj011"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="./images/Moro Abdul-Jamiu resume.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Full-name" required>
+                        <input type="email" name="Email" placeholder="Your Email Address" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Send</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p> Copyright &copy;2022. Moro Abdul-Jamiu</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="main.js"></script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyIE58Q4Xnc1sl2YRRgxS725Vyc_dfO-VoRb43U6Su8cJ32XRn_zkXOpGe_MOma-1Y/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
