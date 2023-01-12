@@ -448,6 +448,12 @@ nav .fas {
    
 }
 
+@media only screen and (max-width: 490px) {
+    .header-text {
+        font-size: 24px;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     #header{
         background-image: url(./images/myPic01.png);
@@ -456,7 +462,7 @@ nav .fas {
         margin-top: 100%;
     }
     .header-text h1{
-        font-size: 23px;
+        font-size: 21px;
     }
 }
 
